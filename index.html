@@ -15,7 +15,7 @@
 
 <body>
   <div class="container p-4">
-    <div class="card">
+    <div class="card fw-semibold">
       <div class="card-header">
         <h3>Payment form example</h3>
       </div>
@@ -28,7 +28,7 @@
           <div class="col-5">
             <div class="mb-3">
               <label for="cardNumber" class="form-label">Card #</label>
-              <input type="text" class="form-control" id="cardNumber" placeholder="xxxxxxxxxxxxxxxx">
+              <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX">
             </div>
           </div>
           <div class="col-3">
@@ -49,7 +49,7 @@
         <div class="row d-flex">
           <div class="col-6">
             <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
+              <label for="name" class="form-label">First Name</label>
               <input type="text" class="form-control" id="name" placeholder="">
             </div>
           </div>
@@ -88,51 +88,54 @@
           </div>
         </div>
         <!--  -->
-        <div class="row d-flex">
+        <div class="row">
+          <div class="col-6" style="display: inline-flex;">
+            <div class="mb-3 ">
+              <label for="name" class="form-label">We accept:</label>
+              <div class="container-fluid bg-secondary rounded p-2" style="width: fit-content;">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input mt-2" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1" style="font-size: 12px;">
+                  <label class="form-check-label" for="inlineradio1"><i
+                      class="fa-brands fa-cc-mastercard text-white"></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input mt-2" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2" style="font-size: 12px;">
+                  <label class="form-check-label" for="inlineradio2"><i
+                      class="fa-brands fa-cc-visa text-white"></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input mt-2" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                    value="option3" style="font-size: 12px;">
+                  <label class="form-check-label" for="inlineradio3"><i
+                      class="fa-brands fa-cc-diners-club text-white"></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input mt-2" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                    value="option4" style="font-size: 12px;">
+                  <label class="form-check-label" for="inlineradio4"><i
+                      class="fa-brands fa-cc-amex text-white"></i></i></label>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-6">
             <div class="mb-3">
-              <label for="name" class="form-label">We accept:</label>
-              <div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1">1</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                  <label class="form-check-label" for="inlineCheckbox2">2</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
-                  <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
-                </div>
-              </div>
+              <label for="lastName" class="form-label">Message</label>
+              <input type="textarea" class="form-control p-4" id="lastName" placeholder="">
+              <p style="font-size: 12px; color: gray;">Add any notes here.</p>
             </div>
-            <div class="col-6">
-              <div class="mb-3">
-                <label for="lastName" class="form-label">Message</label>
-                <input type="text" class="form-control" id="lastName" placeholder="">
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
       <!--  -->
+      <div class="card-footer container-fluid d-flex justify-content-end">
+        <button class="btn btn-secondary fw-semibold m-1">Cancel</button>
+        <button class="btn btn-primary fw-semibold m-1">Send</button>
+      </div>
     </div>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
-  </div>
-
-  </div>
-
-
-
-
-  <!-- pip3 install flask && python3 server.py -->
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
